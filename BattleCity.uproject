@@ -3,11 +3,22 @@
 	"EngineAssociation": "4.27",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "BattleCity",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
 	"TargetPlatforms": [
 		"Android",
 		"Linux",
 		"Mac",
 		"Windows",
-		"WindowsNoEditor"
+		"WindowsNoEditor",
+		"IOS"
 	]
 }
