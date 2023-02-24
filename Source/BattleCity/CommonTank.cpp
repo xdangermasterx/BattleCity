@@ -32,15 +32,14 @@ void ACommonTank::Fire()
 {
 	MakeNoise(1.0f,this,GetActorLocation());
 
-	if (CanFire) {
+	if (CanFire && MissileClass) {
 	
-
+		SpawnActor(MissileClass,);
 	
 	}
 
 
 }
-
 // Called when the game starts or when spawned
 void ACommonTank::BeginPlay()
 {

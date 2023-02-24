@@ -22,7 +22,7 @@ public:
 
 
 	UFUNCTION(BlueprintCallable)
-		void Fire();
+		virtual void Fire();
 
 protected:
 	// Called when the game starts or when spawned
@@ -32,7 +32,7 @@ protected:
 	//	UBoxComponent* Box;	
 	UPROPERTY(VisibleAnywhere)
 		UStaticMeshComponent* Mesh;	
-	UPROPERTY(VisibleAnywhere )
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
 		UArrowComponent* Arrow;
 
 	UPROPERTY(VisibleAnywhere)
@@ -42,7 +42,7 @@ protected:
 		TSubclassOf<class AMissile> MissileClass;
 
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere)
 		bool CanFire;
 
 public:	
